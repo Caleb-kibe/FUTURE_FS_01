@@ -66,6 +66,10 @@ header .nav-links a:hover {
     text-align: center;
     position: relative;
     min-height: 100vh;
+    /* background: url("../images/background_0.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .hero-container {
@@ -236,6 +240,21 @@ header .nav-links a:hover {
     margin-bottom: 1rem;
 }
 
+.project-card a {
+    font-size: 1rem; /* Increase icon size */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #6e5494; /* Change color on hover */
+}
+
+.project-card i {
+    margin-right: 8px; /* Optional: Space between icon and text */
+}
+
 /* Contact Section */
 .contact {
     background: #2c3e50;
@@ -252,6 +271,13 @@ header .nav-links a:hover {
 .contact p {
     margin-bottom: 2rem;
     font-size: 1.2rem;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 5%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .contact .btn {
