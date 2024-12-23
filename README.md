@@ -28,7 +28,7 @@ Welcome to my personal portfolio website! This is a simple and static site built
    Or simply drag and drop the `0-index.html` file into your browser.
 
 ## 🌐 Live Demo
-You can view the live version of my portfolio [here](https://github.com/Caleb-kibe/FUTURE_FS_01.git).
+You can view the live version of my portfolio [here](https://www.kiplagat.tech/).
 
 ## 📂 Project Structure
 ```
