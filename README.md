@@ -41,9 +41,9 @@ portfolio/
 
 📬 Contact
 Feel free to reach out to me via:
-- **Email**: [your-email@example.com](mailto:kiplagatcaleb2@gmail.com)
-- **LinkedIn**: [linkedin.com/in/your-username](www.linkedin.com/in/caleb-kiplagat-791020223)
-- **GitHub**: [github.com/your-username](https://github.com/Caleb-kibe)
+- **Email**: [kiplagatcaleb2@gmail.com](mailto:kiplagatcaleb2@gmail.com)
+- **LinkedIn**: [www.linkedin.com/in/caleb-kiplagat-791020223](www.linkedin.com/in/caleb-kiplagat-791020223)
+- **GitHub**: [https://github.com/Caleb-kibe](https://github.com/Caleb-kibe)
 
 🤝 Contributing
 This is a personal project, but if you have suggestions for improvements, feel free to fork the repository and create a pull request.
