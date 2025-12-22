@@ -28,7 +28,7 @@ Welcome to my personal portfolio website! This is a simple and static site built
    Or simply drag and drop the `0-index.html` file into your browser.
 
 ## 🌐 Live Demo
-You can view the live version of my portfolio [here](https://github.com/Caleb-kibe/FUTURE_FS_01.git).
+You can view the live version of my portfolio [here](https://www.kiplagat.tech/).
 
 ## 📂 Project Structure
 ```
@@ -41,9 +41,9 @@ portfolio/
 
 📬 Contact
 Feel free to reach out to me via:
-- **Email**: [your-email@example.com](mailto:kiplagatcaleb2@gmail.com)
-- **LinkedIn**: [linkedin.com/in/your-username](www.linkedin.com/in/caleb-kiplagat-791020223)
-- **GitHub**: [github.com/your-username](https://github.com/Caleb-kibe)
+- **Email**: [kiplagatcaleb2@gmail.com](mailto:kiplagatcaleb2@gmail.com)
+- **LinkedIn**: [www.linkedin.com/in/caleb-kiplagat-791020223](www.linkedin.com/in/caleb-kiplagat-791020223)
+- **GitHub**: [https://github.com/Caleb-kibe](https://github.com/Caleb-kibe)
 
 🤝 Contributing
 This is a personal project, but if you have suggestions for improvements, feel free to fork the repository and create a pull request.
