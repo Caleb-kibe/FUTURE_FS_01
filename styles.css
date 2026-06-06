@@ -1,0 +1,91 @@
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(-1deg);
+    }
+}
+
+@keyframes float-alt {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(8px) rotate(2deg);
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+}
+
+.reveal.active {
+    animation: reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.hero-pattern {
+    background-color: #f9f9f9;
+    background-image: radial-gradient(#2C3E50 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+    opacity: 0.1;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.5);
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 40px -10px rgba(44, 62, 80, 0.15);
+}
+
+.btn-interact:active {
+    transform: scale(0.96);
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-alt {
+    animation: float-alt 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .reveal,
+    .reveal.active,
+    .animate-float,
+    .animate-float-alt,
+    .project-card,
+    .btn-interact {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
