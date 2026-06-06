@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Caleb Kiplagat | Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Source+Sans+3:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind Config -->
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Caleb Kibet | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Source+Sans+3:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -93,389 +100,386 @@
                         "display-lg": ["Hanken Grotesk"]
                     },
                     "fontSize": {
-                        "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
-                        "caption": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-                        "label-mono": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
-                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "caption": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
                     }
                 }
             }
         }
     </script>
-<style>
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(-3deg); }
-            50% { transform: translateY(-10px) rotate(-1deg); }
-        }
-        @keyframes float-alt {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(8px) rotate(2deg); }
-        }
-        @keyframes reveal {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .reveal {
-            opacity: 0;
-        }
-        .reveal.active {
-            animation: reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .hero-pattern {
-            background-color: #f9f9f9;
-            background-image: radial-gradient(#2C3E50 0.5px, transparent 0.5px);
-            background-size: 24px 24px;
-            opacity: 0.1;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(226, 232, 240, 0.5);
-        }
-        .project-card:hover {
-            box-shadow: 0 10px 40px -10px rgba(44, 62, 80, 0.15);
-        }
-        .btn-interact:active {
-            transform: scale(0.96);
-        }
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        .animate-float-alt {
-            animation: float-alt 8s ease-in-out infinite;
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .reveal, .reveal.active, .animate-float, .animate-float-alt, .project-card, .btn-interact {
-                animation: none !important;
-                transition: none !important;
-                opacity: 1 !important;
-                transform: none !important;
-            }
-        }
-    </style>
+
 </head>
-<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-background/0 backdrop-blur-none border-b border-transparent transition-all duration-300" id="main-header">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-16">
-<div class="flex items-center gap-2 group cursor-pointer">
-<span class="material-symbols-outlined text-slate-deep transition-transform group-hover:rotate-12" data-icon="terminal">terminal</span>
-<span class="font-headline-sm text-headline-sm font-bold text-slate-deep">Caleb Kiplagat</span>
-</div>
-<nav class="hidden md:flex items-center space-x-base">
-<a class="px-4 py-2 font-body-md text-slate-muted hover:text-slate-deep transition-all duration-200 hover:bg-surface-container-low rounded-lg" href="#work">Work</a>
-<a class="px-4 py-2 font-body-md text-slate-muted hover:text-slate-deep transition-all duration-200 hover:bg-surface-container-low rounded-lg" href="#about">About</a>
-<a class="px-4 py-2 font-body-md text-slate-muted hover:text-slate-deep transition-all duration-200 hover:bg-surface-container-low rounded-lg" href="#contact">Contact</a>
-<a class="ml-4 px-6 py-2 bg-slate-deep text-on-primary rounded-lg font-body-md font-semibold hover:bg-slate-muted active:scale-95 transition-all duration-300 btn-interact" href="#">Resume</a>
-</nav>
-<button class="md:hidden p-2 text-slate-deep" id="mobile-menu-btn">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</header>
-<!-- Mobile Drawer -->
-<div class="fixed inset-0 z-[60] transform translate-x-full transition-transform duration-300 pointer-events-none" id="mobile-drawer">
-<div class="absolute inset-0 bg-slate-deep/20 backdrop-blur-sm" id="drawer-overlay"></div>
-<div class="absolute right-0 top-0 h-full w-[280px] bg-surface-container-lowest shadow-md flex flex-col p-base space-y-stack-sm pointer-events-auto border-l border-border-subtle">
-<div class="flex items-center justify-between p-base">
-<span class="font-headline-sm text-headline-sm font-bold text-slate-deep">Menu</span>
-<button class="p-2" id="close-drawer"><span class="material-symbols-outlined" data-icon="close">close</span></button>
-</div>
-<a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all" href="#work">
-<span class="material-symbols-outlined" data-icon="code">code</span> Work
-        </a>
-<a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all" href="#about">
-<span class="material-symbols-outlined" data-icon="person">person</span> About
-        </a>
-<a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all" href="#services">
-<span class="material-symbols-outlined" data-icon="layers">layers</span> Services
-        </a>
-<a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all" href="#contact">
-<span class="material-symbols-outlined" data-icon="mail">mail</span> Contact
-        </a>
-</div>
-</div>
-<main class="mt-16">
-<!-- Hero Section -->
-<section class="relative min-h-[90vh] flex items-center pt-stack-lg overflow-hidden">
-<div class="absolute inset-0 hero-pattern -z-10"></div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-stack-lg items-center">
-<div class="space-y-stack-md order-2 md:order-1 reveal" style="transition-delay: 100ms">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed rounded-full border border-primary-container/10">
-<span class="w-2 h-2 rounded-full bg-slate-deep animate-pulse"></span>
-<span class="font-label-mono text-label-mono text-on-primary-fixed uppercase tracking-wider">Available for new projects</span>
-</div>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-slate-deep leading-tight">
-                    Crafting technical solutions with <span class="text-primary-container">academic precision.</span>
-</h1>
-<p class="font-body-lg text-body-lg text-slate-muted max-w-xl">
-                    Software Engineer specializing in building scalable web applications and data-driven interfaces. Bridging the gap between complex research and accessible technology.
-                </p>
-<div class="flex flex-wrap gap-stack-sm pt-base">
-<a class="px-8 py-4 bg-slate-deep text-on-primary rounded-xl font-headline-sm flex items-center gap-2 hover:bg-slate-muted transition-all hover:-translate-y-1 shadow-md btn-interact" href="#work">
-                        View My Projects <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
-</a>
-<a class="px-8 py-4 border border-border-subtle bg-white text-slate-deep rounded-xl font-headline-sm hover:border-slate-deep transition-all hover:bg-surface-alt btn-interact" href="#contact">
-                        Contact Me
-                    </a>
-</div>
-</div>
-<div class="relative order-1 md:order-2 flex justify-center reveal" style="transition-delay: 300ms">
-<div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]">
-<!-- Decorative Shapes -->
-<div class="absolute -top-4 -right-4 w-full h-full border-2 border-slate-deep rounded-xl -z-10 animate-float"></div>
-<div class="absolute -bottom-4 -left-4 w-full h-full bg-primary-fixed rounded-xl -z-20 animate-float-alt"></div>
-<!-- Profile Image -->
-<div class="w-full h-full rounded-xl overflow-hidden shadow-xl group">
-<img alt="Caleb Kiplagat Profile" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLv6Xn0NwLX24zRiaUxj3H9m6CS45qM3mIIMPNnx2No6MkU9ivmFD2A6MTmXKjTW5x2JVS4C1yVwfdAPtwanLMSWopmJoJLbikHD-dsmd-_7AQVBUiAIapSGuluDGERm31JEHk2jLL-qnyzN4twvi0ExbvH2aeEk1IziZb-2ujkM5q5sbHhINV3zl3yezAI25hMnl5Vvl7qWdU_vQtnxJ9TTzhdkmR9ZzWBlChviR8tNvynb1pzIHO3-PBPc"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Stats/Tags Section -->
-<section class="py-stack-md border-y border-border-subtle bg-surface-alt reveal">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-wrap justify-center md:justify-between items-center gap-stack-md opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-<span class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">REACT.JS</span>
-<span class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">PYTHON</span>
-<span class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">TYPESCRIPT</span>
-<span class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">TAILWIND CSS</span>
-<span class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">DJANGO</span>
-<span class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">NEXT.JS</span>
-</div>
-</section>
-<!-- Featured Work -->
-<section class="py-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop" id="work">
-<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg reveal">
-<div class="space-y-base">
-<span class="font-label-mono text-label-mono text-slate-deep uppercase tracking-widest">Case Studies</span>
-<h2 class="font-headline-md text-headline-md text-slate-deep">Selected Engineering Work</h2>
-</div>
-<p class="font-body-md text-slate-muted max-w-sm mt-stack-sm md:mt-0">
-                A collection of projects exploring the intersection of user experience and performance-driven backend systems.
-            </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<!-- Readerverse: Large Feature -->
-<div class="md:col-span-8 group cursor-pointer reveal project-card transition-all duration-500 hover:scale-[1.01] active:scale-100" style="transition-delay: 100ms">
-<div class="relative rounded-xl overflow-hidden border border-border-subtle aspect-[21/10] bg-white transition-all duration-500">
-<img alt="Readerverse Project Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLsBmnWd0a38JnafI2Spv5yuVajISI841F_ly6PFjUIM20iAoN22OH48jlbHqodP1UAgiapxRXVK2d6hzOM_gV3i9P4SqvZpGJMAPujLs8IMXovzmQULU-L6ppgj2xgD2l3yCyzEV8NAJVSfF_R7KROvO_vooRhyYyZkLkBrp9G35clILsEPKCUWF0NaKtCYbAx56FEst0wQcPDDqJZFyECq6jMZ6dRK74oxo5uUUUh-4S_GaGaRHoea79Ga"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-deep/90 via-slate-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-stack-md">
-<div class="transform translate-y-4 group-hover:translate-y-0 transition-transform">
-<h3 class="font-headline-sm text-headline-sm text-white">Readerverse</h3>
-<p class="text-white/80 font-body-md">Personalized book recommendation engine with deep social integration.</p>
-</div>
-</div>
-</div>
-<div class="mt-base flex justify-between items-start">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-slate-deep group-hover:text-primary transition-colors">Readerverse</h3>
-<div class="flex gap-2 mt-2">
-<span class="px-3 py-1 bg-surface-alt rounded-full text-caption font-label-mono border border-border-subtle">Fullstack</span>
-<span class="px-3 py-1 bg-surface-alt rounded-full text-caption font-label-mono border border-border-subtle">React</span>
-</div>
-</div>
-<div class="w-12 h-12 rounded-full border border-border-subtle flex items-center justify-center group-hover:bg-slate-deep group-hover:text-white transition-all duration-300">
-<span class="material-symbols-outlined" data-icon="north_east">north_east</span>
-</div>
-</div>
-</div>
-<!-- MedBooker: Side Card -->
-<div class="md:col-span-4 group cursor-pointer reveal project-card transition-all duration-500 hover:scale-[1.01] active:scale-100" style="transition-delay: 200ms">
-<div class="relative rounded-xl overflow-hidden border border-border-subtle h-full min-h-[300px] bg-white transition-all duration-500">
-<img alt="MedBooker Project Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLsY9lzLPVF4PdoktxGeQw03Tgnv2v6ZZPMxGmLli4_gwvPZwAeLZu0YsjunA9HcXeeB4SFz3IDvKa3zW-O3YijSRPiRPAdE6xzbjJhhIoHpwe9GgqgKh9HRzq260C9jvqAUlSWNA48BdI3P1xK0wOCgPMOg5pzoL-xebcr_k4i9hPbAlTjPh8Gl8OUZmk1EHBWUWsDBGMlamIh7KlOAKx5UKFE9rm6ErlwmCJOfasubihdTQYV8EuSF6Li7"/>
-<div class="absolute inset-0 bg-slate-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-<span class="px-6 py-2 bg-white text-slate-deep rounded-lg font-semibold shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">View Case Study</span>
-</div>
-</div>
-<div class="mt-base">
-<h3 class="font-headline-sm text-headline-sm text-slate-deep group-hover:text-primary transition-colors">MedBooker</h3>
-<p class="font-body-md text-slate-muted mt-2">Healthcare scheduling system designed for rural accessibility.</p>
-</div>
-</div>
-<!-- LuxeTile: Bottom Card -->
-<div class="md:col-span-12 group cursor-pointer mt-gutter reveal project-card transition-all duration-500 hover:scale-[1.005]" style="transition-delay: 300ms">
-<div class="relative rounded-xl overflow-hidden border border-border-subtle aspect-[21/6] bg-slate-deep transition-all duration-500">
-<img alt="LuxeTile Project Screenshot" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLsDAEGRH0u0XNuTGM5Vr6SqG-iS8oVATy9nCXTtY05DoR_dfvxtkRrvEZ0WHtfSIjBhJWKh6EbOXTlh6BU-ClDKy_D1T97Hs_16yQWYKxi296oPjnpUmvLryHqs5xDjJJJY7cyHWy2xtjmKn62IoidPnvzd2cJxypmgaeZ5V58SVeApGdjGM0Cc2tpLoz1CWapbMUHUBmzyFjKHuPhz2w3Gww83MGEopE_hZ4AFgnEtIEl9s7DK9KWZUCo"/>
-<div class="absolute inset-y-0 left-0 w-full md:w-1/2 p-stack-md flex flex-col justify-center bg-gradient-to-r from-slate-deep via-slate-deep/80 to-transparent">
-<span class="font-label-mono text-label-mono text-primary-fixed uppercase mb-2">E-commerce Architecture</span>
-<h3 class="font-display-lg text-headline-md md:text-headline-sm text-white">LuxeTile Interiors</h3>
-<p class="text-white/70 mt-base hidden md:block max-w-sm">High-performance digital catalog with 3D visualization capabilities.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Engineering Philosophy Section -->
-<section class="py-stack-lg bg-surface-alt border-y border-border-subtle overflow-hidden" id="about">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-stack-lg items-center">
-<div class="reveal">
-<h2 class="font-headline-md text-headline-md text-slate-deep mb-stack-md">Engineering Philosophy</h2>
-<div class="space-y-stack-sm text-body-lg text-slate-muted">
-<p>With a background rooted in disciplined problem solving, I approach development as a craft that requires both creative intuition and logical rigor.</p>
-<p>I believe in writing clean, documented code that serves the user first while maintaining the technical debt that often slows down scaling organizations.</p>
-</div>
-<div class="grid grid-cols-2 gap-stack-md mt-stack-lg">
-<div class="p-6 bg-white border border-border-subtle rounded-xl reveal hover:shadow-lg transition-all duration-300 group" style="transition-delay: 200ms">
-<span class="material-symbols-outlined text-primary-container text-4xl mb-2 transition-transform group-hover:-translate-y-1" data-icon="architecture">architecture</span>
-<h4 class="font-headline-sm text-slate-deep">Architecture</h4>
-<p class="text-caption text-slate-muted mt-1">Building robust systems that scale with business needs.</p>
-</div>
-<div class="p-6 bg-white border border-border-subtle rounded-xl reveal hover:shadow-lg transition-all duration-300 group" style="transition-delay: 400ms">
-<span class="material-symbols-outlined text-primary-container text-4xl mb-2 transition-transform group-hover:-translate-y-1" data-icon="query_stats">query_stats</span>
-<h4 class="font-headline-sm text-slate-deep">Data-Driven</h4>
-<p class="text-caption text-slate-muted mt-1">Informed decision making through rigorous analytics.</p>
-</div>
-</div>
-</div>
-<div class="relative reveal" style="transition-delay: 300ms">
-<div class="aspect-square bg-white border border-border-subtle p-8 rounded-xl shadow-lg transform md:rotate-3 hover:rotate-0 transition-transform duration-700">
-<div class="h-full w-full border border-dashed border-slate-muted/30 p-base flex flex-col justify-between">
-<div class="space-y-base">
-<div class="w-12 h-1 bg-slate-deep"></div>
-<h5 class="font-label-mono text-slate-deep uppercase">Expertise Stack</h5>
-<ul class="space-y-2 font-body-md text-slate-muted">
-<li class="flex items-center gap-2 group cursor-default">
-<span class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span> Frontend: React, Next.js, Vue
-                                </li>
-<li class="flex items-center gap-2 group cursor-default">
-<span class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span> Backend: Node.js, Django, Go
-                                </li>
-<li class="flex items-center gap-2 group cursor-default">
-<span class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span> Cloud: AWS, Google Cloud, Docker
-                                </li>
-<li class="flex items-center gap-2 group cursor-default">
-<span class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span> Tools: Git, CI/CD, Figma
-                                </li>
-</ul>
-</div>
-<div class="pt-stack-md border-t border-border-subtle mt-stack-md">
-<p class="font-caption text-slate-muted italic">"Simplicity is the ultimate sophistication."</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-stack-lg" id="contact">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop reveal">
-<div class="bg-slate-deep rounded-3xl p-stack-lg relative overflow-hidden text-center md:text-left shadow-2xl transition-transform hover:scale-[1.01]">
-<!-- Background Decoration -->
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/10 rounded-full -mr-32 -mt-32 blur-3xl animate-pulse"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-fixed/5 rounded-full -ml-32 -mb-32 blur-3xl"></div>
-<div class="relative z-10 grid md:grid-cols-2 gap-stack-lg items-center">
-<div>
-<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white">Let's build something <span class="text-primary-fixed">remarkable.</span></h2>
-<p class="font-body-lg text-white/70 mt-stack-sm max-w-md">Currently accepting select freelance projects and full-time opportunities. Reach out for a consultation or just to talk tech.</p>
-</div>
-<div class="flex flex-col items-center md:items-end gap-stack-sm">
-<a class="w-full md:w-auto px-10 py-5 bg-white text-slate-deep rounded-2xl font-headline-sm text-center shadow-xl hover:bg-primary-fixed transition-all hover:scale-105 active:scale-95 btn-interact" href="mailto:contact@caleb.me">
-                            Start a Conversation
+
+<body
+    class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-background/0 backdrop-blur-none border-b border-transparent transition-all duration-300"
+        id="main-header">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-16">
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <span class="material-symbols-outlined text-slate-deep transition-transform group-hover:rotate-12"
+                    data-icon="terminal">terminal</span>
+                <span class="font-headline-sm text-headline-sm font-bold text-slate-deep">Caleb Kibet</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-base">
+                <a class="px-4 py-2 font-body-md text-slate-muted hover:text-slate-deep transition-all duration-200 hover:bg-surface-container-low rounded-lg"
+                    href="#work">Work</a>
+                <a class="px-4 py-2 font-body-md text-slate-muted hover:text-slate-deep transition-all duration-200 hover:bg-surface-container-low rounded-lg"
+                    href="#about">About</a>
+                <a class="px-4 py-2 font-body-md text-slate-muted hover:text-slate-deep transition-all duration-200 hover:bg-surface-container-low rounded-lg"
+                    href="#contact">Contact</a>
+                <a class="ml-4 px-6 py-2 bg-slate-deep text-on-primary rounded-lg font-body-md font-semibold hover:bg-slate-muted active:scale-95 transition-all duration-300 btn-interact"
+                    href="#">Resume</a>
+            </nav>
+            <button class="md:hidden p-2 text-slate-deep" id="mobile-menu-btn">
+                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- Mobile Drawer -->
+    <div class="fixed inset-0 z-[60] transform translate-x-full transition-transform duration-300 pointer-events-none"
+        id="mobile-drawer">
+        <div class="absolute inset-0 bg-slate-deep/20 backdrop-blur-sm" id="drawer-overlay"></div>
+        <div
+            class="absolute right-0 top-0 h-full w-[280px] bg-surface-container-lowest shadow-md flex flex-col p-base space-y-stack-sm pointer-events-auto border-l border-border-subtle">
+            <div class="flex items-center justify-between p-base">
+                <span class="font-headline-sm text-headline-sm font-bold text-slate-deep">Menu</span>
+                <button class="p-2" id="close-drawer"><span class="material-symbols-outlined"
+                        data-icon="close">close</span></button>
+            </div>
+            <a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all"
+                href="#work">
+                <span class="material-symbols-outlined" data-icon="code">code</span> Work
+            </a>
+            <a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all"
+                href="#about">
+                <span class="material-symbols-outlined" data-icon="person">person</span> About
+            </a>
+            <a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all"
+                href="#services">
+                <span class="material-symbols-outlined" data-icon="layers">layers</span> Services
+            </a>
+            <a class="flex items-center gap-3 p-4 font-body-lg text-slate-muted hover:bg-surface-container-low rounded-full transition-all"
+                href="#contact">
+                <span class="material-symbols-outlined" data-icon="mail">mail</span> Contact
+            </a>
+        </div>
+    </div>
+    <main class="mt-16">
+        <!-- Hero Section -->
+        <section class="relative min-h-[90vh] flex items-center pt-stack-lg overflow-hidden">
+            <div class="absolute inset-0 hero-pattern -z-10"></div>
+            <div
+                class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-stack-lg items-center">
+                <div class="space-y-stack-md order-2 md:order-1 reveal" style="transition-delay: 100ms">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed rounded-full border border-primary-container/10">
+                        <span class="w-2 h-2 rounded-full bg-slate-deep animate-pulse"></span>
+                        <span
+                            class="font-label-mono text-label-mono text-on-primary-fixed uppercase tracking-wider">Available
+                            for new projects</span>
+                    </div>
+                    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-slate-deep leading-tight">
+                        Crafting technical solutions with <span class="text-primary-container">academic
+                            precision.</span>
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-slate-muted max-w-xl">
+                        Software Engineer specializing in building scalable web applications and data-driven interfaces.
+                        Bridging the gap between complex research and accessible technology.
+                    </p>
+                    <div class="flex flex-wrap gap-stack-sm pt-base">
+                        <a class="px-8 py-4 bg-slate-deep text-on-primary rounded-xl font-headline-sm flex items-center gap-2 hover:bg-slate-muted transition-all hover:-translate-y-1 shadow-md btn-interact"
+                            href="#work">
+                            View My Projects <span
+                                class="material-symbols-outlined transition-transform group-hover:translate-x-1"
+                                data-icon="arrow_forward">arrow_forward</span>
                         </a>
-<div class="flex gap-stack-sm mt-4">
-<a class="text-white/60 hover:text-white transition-all hover:scale-125" href="#"><span class="material-symbols-outlined" data-icon="hub">hub</span></a>
-<a class="text-white/60 hover:text-white transition-all hover:scale-125" href="#"><span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span></a>
-<a class="text-white/60 hover:text-white transition-all hover:scale-125" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-stack-lg bg-surface-alt border-t border-border-subtle">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base">
-<div class="flex flex-col items-center md:items-start gap-2">
-<span class="font-label-mono text-label-mono text-slate-deep">CALEB KIPLAGAT</span>
-<p class="font-caption text-caption text-slate-muted">© 2024 Caleb Kiplagat. Built with precision.</p>
-</div>
-<div class="flex gap-stack-md">
-<a class="font-caption text-caption text-slate-muted hover:text-slate-deep transition-all hover:-translate-y-0.5" href="#">GitHub</a>
-<a class="font-caption text-caption text-slate-muted hover:text-slate-deep transition-all hover:-translate-y-0.5" href="#">LinkedIn</a>
-<a class="font-caption text-caption text-slate-muted hover:text-slate-deep transition-all hover:-translate-y-0.5" href="#">Twitter</a>
-</div>
-</div>
-</footer>
-<!-- FAB -->
-<button class="fixed bottom-base right-base md:bottom-margin-desktop md:right-margin-desktop w-14 h-14 bg-slate-deep text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all z-40 group btn-interact">
-<span class="material-symbols-outlined" data-icon="chat">chat</span>
-<span class="absolute right-full mr-4 px-3 py-1 bg-white border border-border-subtle rounded-lg text-slate-deep text-caption font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all pointer-events-none transform translate-x-2 group-hover:translate-x-0">Chat with me</span>
-</button>
-<script>
-    // Mobile Drawer Logic
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const closeBtn = document.getElementById('close-drawer');
-    const drawer = document.getElementById('mobile-drawer');
-    const overlay = document.getElementById('drawer-overlay');
+                        <a class="px-8 py-4 border border-border-subtle bg-white text-slate-deep rounded-xl font-headline-sm hover:border-slate-deep transition-all hover:bg-surface-alt btn-interact"
+                            href="#contact">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="relative order-1 md:order-2 flex justify-center reveal" style="transition-delay: 300ms">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]">
+                        <!-- Decorative Shapes -->
+                        <div
+                            class="absolute -top-4 -right-4 w-full h-full border-2 border-slate-deep rounded-xl -z-10 animate-float">
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -left-4 w-full h-full bg-primary-fixed rounded-xl -z-20 animate-float-alt">
+                        </div>
+                        <!-- Profile Image -->
+                        <div class="w-full h-full rounded-xl overflow-hidden shadow-xl group">
+                            <img alt="Caleb Kiplagat Profile"
+                                class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida/AP1WRLv6Xn0NwLX24zRiaUxj3H9m6CS45qM3mIIMPNnx2No6MkU9ivmFD2A6MTmXKjTW5x2JVS4C1yVwfdAPtwanLMSWopmJoJLbikHD-dsmd-_7AQVBUiAIapSGuluDGERm31JEHk2jLL-qnyzN4twvi0ExbvH2aeEk1IziZb-2ujkM5q5sbHhINV3zl3yezAI25hMnl5Vvl7qWdU_vQtnxJ9TTzhdkmR9ZzWBlChviR8tNvynb1pzIHO3-PBPc" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats/Tags Section -->
+        <section class="py-stack-md border-y border-border-subtle bg-surface-alt reveal">
+            <div
+                class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-wrap justify-center md:justify-between items-center gap-stack-md opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <span
+                    class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">REACT.JS</span>
+                <span
+                    class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">PYTHON</span>
+                <span
+                    class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">TYPESCRIPT</span>
+                <span
+                    class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">TAILWIND
+                    CSS</span>
+                <span
+                    class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">DJANGO</span>
+                <span
+                    class="font-label-mono text-label-mono text-slate-deep hover:text-primary transition-colors cursor-default">NEXT.JS</span>
+            </div>
+        </section>
+        <!-- Featured Work -->
+        <section class="py-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop" id="work">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg reveal">
+                <div class="space-y-base">
+                    <span class="font-label-mono text-label-mono text-slate-deep uppercase tracking-widest">Case
+                        Studies</span>
+                    <h2 class="font-headline-md text-headline-md text-slate-deep">Selected Engineering Work</h2>
+                </div>
+                <p class="font-body-md text-slate-muted max-w-sm mt-stack-sm md:mt-0">
+                    A collection of projects exploring the intersection of user experience and performance-driven
+                    backend systems.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <!-- Readerverse: Large Feature -->
+                <div class="md:col-span-8 group cursor-pointer reveal project-card transition-all duration-500 hover:scale-[1.01] active:scale-100"
+                    style="transition-delay: 100ms">
+                    <div
+                        class="relative rounded-xl overflow-hidden border border-border-subtle aspect-[21/10] bg-white transition-all duration-500">
+                        <img alt="Readerverse Project Screenshot"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            src="https://lh3.googleusercontent.com/aida/AP1WRLsBmnWd0a38JnafI2Spv5yuVajISI841F_ly6PFjUIM20iAoN22OH48jlbHqodP1UAgiapxRXVK2d6hzOM_gV3i9P4SqvZpGJMAPujLs8IMXovzmQULU-L6ppgj2xgD2l3yCyzEV8NAJVSfF_R7KROvO_vooRhyYyZkLkBrp9G35clILsEPKCUWF0NaKtCYbAx56FEst0wQcPDDqJZFyECq6jMZ6dRK74oxo5uUUUh-4S_GaGaRHoea79Ga" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-deep/90 via-slate-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-stack-md">
+                            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                <h3 class="font-headline-sm text-headline-sm text-white">Readerverse</h3>
+                                <p class="text-white/80 font-body-md">Personalized book recommendation engine with deep
+                                    social integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-base flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-headline-sm text-headline-sm text-slate-deep group-hover:text-primary transition-colors">
+                                Readerverse</h3>
+                            <div class="flex gap-2 mt-2">
+                                <span
+                                    class="px-3 py-1 bg-surface-alt rounded-full text-caption font-label-mono border border-border-subtle">Fullstack</span>
+                                <span
+                                    class="px-3 py-1 bg-surface-alt rounded-full text-caption font-label-mono border border-border-subtle">React</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full border border-border-subtle flex items-center justify-center group-hover:bg-slate-deep group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined" data-icon="north_east">north_east</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- MedBooker: Side Card -->
+                <div class="md:col-span-4 group cursor-pointer reveal project-card transition-all duration-500 hover:scale-[1.01] active:scale-100"
+                    style="transition-delay: 200ms">
+                    <div
+                        class="relative rounded-xl overflow-hidden border border-border-subtle h-full min-h-[300px] bg-white transition-all duration-500">
+                        <img alt="MedBooker Project Screenshot"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            src="https://lh3.googleusercontent.com/aida/AP1WRLsY9lzLPVF4PdoktxGeQw03Tgnv2v6ZZPMxGmLli4_gwvPZwAeLZu0YsjunA9HcXeeB4SFz3IDvKa3zW-O3YijSRPiRPAdE6xzbjJhhIoHpwe9GgqgKh9HRzq260C9jvqAUlSWNA48BdI3P1xK0wOCgPMOg5pzoL-xebcr_k4i9hPbAlTjPh8Gl8OUZmk1EHBWUWsDBGMlamIh7KlOAKx5UKFE9rm6ErlwmCJOfasubihdTQYV8EuSF6Li7" />
+                        <div
+                            class="absolute inset-0 bg-slate-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                            <span
+                                class="px-6 py-2 bg-white text-slate-deep rounded-lg font-semibold shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <div class="mt-base">
+                        <h3
+                            class="font-headline-sm text-headline-sm text-slate-deep group-hover:text-primary transition-colors">
+                            MedBooker</h3>
+                        <p class="font-body-md text-slate-muted mt-2">Healthcare scheduling system designed for rural
+                            accessibility.</p>
+                    </div>
+                </div>
+                <!-- LuxeTile: Bottom Card -->
+                <div class="md:col-span-12 group cursor-pointer mt-gutter reveal project-card transition-all duration-500 hover:scale-[1.005]"
+                    style="transition-delay: 300ms">
+                    <div
+                        class="relative rounded-xl overflow-hidden border border-border-subtle aspect-[21/6] bg-slate-deep transition-all duration-500">
+                        <img alt="LuxeTile Project Screenshot"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-700"
+                            src="https://lh3.googleusercontent.com/aida/AP1WRLsDAEGRH0u0XNuTGM5Vr6SqG-iS8oVATy9nCXTtY05DoR_dfvxtkRrvEZ0WHtfSIjBhJWKh6EbOXTlh6BU-ClDKy_D1T97Hs_16yQWYKxi296oPjnpUmvLryHqs5xDjJJJY7cyHWy2xtjmKn62IoidPnvzd2cJxypmgaeZ5V58SVeApGdjGM0Cc2tpLoz1CWapbMUHUBmzyFjKHuPhz2w3Gww83MGEopE_hZ4AFgnEtIEl9s7DK9KWZUCo" />
+                        <div
+                            class="absolute inset-y-0 left-0 w-full md:w-1/2 p-stack-md flex flex-col justify-center bg-gradient-to-r from-slate-deep via-slate-deep/80 to-transparent">
+                            <span class="font-label-mono text-label-mono text-primary-fixed uppercase mb-2">E-commerce
+                                Architecture</span>
+                            <h3 class="font-display-lg text-headline-md md:text-headline-sm text-white">LuxeTile
+                                Interiors</h3>
+                            <p class="text-white/70 mt-base hidden md:block max-w-sm">High-performance digital catalog
+                                with 3D visualization capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Engineering Philosophy Section -->
+        <section class="py-stack-lg bg-surface-alt border-y border-border-subtle overflow-hidden" id="about">
+            <div
+                class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-stack-lg items-center">
+                <div class="reveal">
+                    <h2 class="font-headline-md text-headline-md text-slate-deep mb-stack-md">Engineering Philosophy
+                    </h2>
+                    <div class="space-y-stack-sm text-body-lg text-slate-muted">
+                        <p>With a background rooted in disciplined problem solving, I approach development as a craft
+                            that requires both creative intuition and logical rigor.</p>
+                        <p>I believe in writing clean, documented code that serves the user first while maintaining the
+                            technical debt that often slows down scaling organizations.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-stack-md mt-stack-lg">
+                        <div class="p-6 bg-white border border-border-subtle rounded-xl reveal hover:shadow-lg transition-all duration-300 group"
+                            style="transition-delay: 200ms">
+                            <span
+                                class="material-symbols-outlined text-primary-container text-4xl mb-2 transition-transform group-hover:-translate-y-1"
+                                data-icon="architecture">architecture</span>
+                            <h4 class="font-headline-sm text-slate-deep">Architecture</h4>
+                            <p class="text-caption text-slate-muted mt-1">Building robust systems that scale with
+                                business needs.</p>
+                        </div>
+                        <div class="p-6 bg-white border border-border-subtle rounded-xl reveal hover:shadow-lg transition-all duration-300 group"
+                            style="transition-delay: 400ms">
+                            <span
+                                class="material-symbols-outlined text-primary-container text-4xl mb-2 transition-transform group-hover:-translate-y-1"
+                                data-icon="query_stats">query_stats</span>
+                            <h4 class="font-headline-sm text-slate-deep">Data-Driven</h4>
+                            <p class="text-caption text-slate-muted mt-1">Informed decision making through rigorous
+                                analytics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative reveal" style="transition-delay: 300ms">
+                    <div
+                        class="aspect-square bg-white border border-border-subtle p-8 rounded-xl shadow-lg transform md:rotate-3 hover:rotate-0 transition-transform duration-700">
+                        <div
+                            class="h-full w-full border border-dashed border-slate-muted/30 p-base flex flex-col justify-between">
+                            <div class="space-y-base">
+                                <div class="w-12 h-1 bg-slate-deep"></div>
+                                <h5 class="font-label-mono text-slate-deep uppercase">Expertise Stack</h5>
+                                <ul class="space-y-2 font-body-md text-slate-muted">
+                                    <li class="flex items-center gap-2 group cursor-default">
+                                        <span
+                                            class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span>
+                                        Frontend: React, Next.js, Vue
+                                    </li>
+                                    <li class="flex items-center gap-2 group cursor-default">
+                                        <span
+                                            class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span>
+                                        Backend: Node.js, Django, Go
+                                    </li>
+                                    <li class="flex items-center gap-2 group cursor-default">
+                                        <span
+                                            class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span>
+                                        Cloud: AWS, Google Cloud, Docker
+                                    </li>
+                                    <li class="flex items-center gap-2 group cursor-default">
+                                        <span
+                                            class="w-1.5 h-1.5 rounded-full bg-slate-deep group-hover:scale-150 transition-transform"></span>
+                                        Tools: Git, CI/CD, Figma
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pt-stack-md border-t border-border-subtle mt-stack-md">
+                                <p class="font-caption text-slate-muted italic">"Simplicity is the ultimate
+                                    sophistication."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-stack-lg" id="contact">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop reveal">
+                <div
+                    class="bg-slate-deep rounded-3xl p-stack-lg relative overflow-hidden text-center md:text-left shadow-2xl transition-transform hover:scale-[1.01]">
+                    <!-- Background Decoration -->
+                    <div
+                        class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/10 rounded-full -mr-32 -mt-32 blur-3xl animate-pulse">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-fixed/5 rounded-full -ml-32 -mb-32 blur-3xl">
+                    </div>
+                    <div class="relative z-10 grid md:grid-cols-2 gap-stack-lg items-center">
+                        <div>
+                            <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white">Let's build
+                                something <span class="text-primary-fixed">remarkable.</span></h2>
+                            <p class="font-body-lg text-white/70 mt-stack-sm max-w-md">Currently accepting select
+                                freelance projects and full-time opportunities. Reach out for a consultation or just to
+                                talk tech.</p>
+                        </div>
+                        <div class="flex flex-col items-center md:items-end gap-stack-sm">
+                            <a class="w-full md:w-auto px-10 py-5 bg-white text-slate-deep rounded-2xl font-headline-sm text-center shadow-xl hover:bg-primary-fixed transition-all hover:scale-105 active:scale-95 btn-interact"
+                                href="mailto:contact@caleb.me">
+                                Start a Conversation
+                            </a>
+                            <div class="flex gap-stack-sm mt-4">
+                                <a class="text-white/60 hover:text-white transition-all hover:scale-125" href="https://github.com/Caleb-kibe"><span
+                                        class="material-symbols-outlined" data-icon="hub">hub</span></a>
+                                <a class="text-white/60 hover:text-white transition-all hover:scale-125" href="mailto:kiplagatcaleb2@gmail.com"><span
+                                        class="material-symbols-outlined"
+                                        data-icon="alternate_email">alternate_email</span></a>
+                                <a class="text-white/60 hover:text-white transition-all hover:scale-125" href="https://www.linkedin.com/in/caleb-kiplagat-791020223"><span
+                                        class="material-symbols-outlined" data-icon="share">share</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-stack-lg bg-surface-alt border-t border-border-subtle">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base">
+            <div class="flex flex-col items-center md:items-start gap-2">
+                <span class="font-label-mono text-label-mono text-slate-deep">CALEB KIBET</span>
+                <p class="font-caption text-caption text-slate-muted">© 2026 Caleb Kibet. Built with precision.</p>
+            </div>
+            <div class="flex gap-stack-md">
+                <a class="font-caption text-caption text-slate-muted hover:text-slate-deep transition-all hover:-translate-y-0.5"
+                    href="https://github.com/Caleb-kibe">GitHub</a>
+                <a class="font-caption text-caption text-slate-muted hover:text-slate-deep transition-all hover:-translate-y-0.5"
+                    href="www.linkedin.com/in/caleb-kiplagat-791020223">LinkedIn</a>
+                <a class="font-caption text-caption text-slate-muted hover:text-slate-deep transition-all hover:-translate-y-0.5"
+                    href="https://x.com/kibet_lembus">X/Twitter</a>
+            </div>
+        </div>
+    </footer>
+    <!-- FAB -->
+    <button
+        class="fixed bottom-base right-base md:bottom-margin-desktop md:right-margin-desktop w-14 h-14 bg-slate-deep text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all z-40 group btn-interact">
+        <span class="material-symbols-outlined" data-icon="chat">chat</span>
+        <span
+            class="absolute right-full mr-4 px-3 py-1 bg-white border border-border-subtle rounded-lg text-slate-deep text-caption font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all pointer-events-none transform translate-x-2 group-hover:translate-x-0">Chat
+            with me</span>
+    </button>
+    <script src="scripts.js"></script>
+</body>
 
-    function toggleDrawer(open) {
-        if(open) {
-            drawer.classList.remove('translate-x-full');
-            drawer.classList.add('translate-x-0');
-            drawer.classList.remove('pointer-events-none');
-        } else {
-            drawer.classList.add('translate-x-full');
-            drawer.classList.remove('translate-x-0');
-            drawer.classList.add('pointer-events-none');
-        }
-    }
-
-    menuBtn.addEventListener('click', () => toggleDrawer(true));
-    closeBtn.addEventListener('click', () => toggleDrawer(false));
-    overlay.addEventListener('click', () => toggleDrawer(false));
-
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            toggleDrawer(false);
-            const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            const target = document.querySelector(targetId);
-            if (target) {
-                window.scrollTo({
-                    top: target.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Header Scroll Effect & Reveal Animation Trigger
-    const header = document.getElementById('main-header');
-    const reveals = document.querySelectorAll('.reveal');
-
-    const handleScroll = () => {
-        // Header styling
-        if (window.scrollY > 20) {
-            header.classList.add('bg-background/80', 'backdrop-blur-md', 'border-border-subtle', 'shadow-sm', 'py-1');
-            header.classList.remove('bg-background/0', 'backdrop-blur-none', 'border-transparent');
-        } else {
-            header.classList.remove('bg-background/80', 'backdrop-blur-md', 'border-border-subtle', 'shadow-sm', 'py-1');
-            header.classList.add('bg-background/0', 'backdrop-blur-none', 'border-transparent');
-        }
-
-        // Entrance animations
-        reveals.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-            if (rect.top <= windowHeight * 0.85) {
-                el.classList.add('active');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    // Initial check
-    handleScroll();
-</script>
-</body></html>
+</html>
